@@ -3,8 +3,12 @@
   <component name="DesignSurface">
     <option name="filePathToZoomLevelMap">
       <map>
+        <entry key="..\:/Prabhakar/TARGET/PROJECTS/Expenses Tracker/app/src/main/res/drawable/baground.xml" value="0.1455" />
+        <entry key="..\:/Prabhakar/TARGET/PROJECTS/Expenses Tracker/app/src/main/res/drawable/test.xml" value="0.1315" />
         <entry key="..\:/Prabhakar/TARGET/PROJECTS/Expenses Tracker/app/src/main/res/layout/activity_main.xml" value="0.12613981762917933" />
+        <entry key="..\:/Prabhakar/TARGET/PROJECTS/Expenses Tracker/app/src/main/res/layout/activity_signup.xml" value="0.2" />
         <entry key="..\:/Prabhakar/TARGET/PROJECTS/Expenses Tracker/app/src/main/res/layout/activity_welcome_activiity.xml" value="0.22826086956521738" />
+        <entry key="..\:/Prabhakar/TARGET/PROJECTS/Expenses Tracker/app/src/main/res/layout/activity_welcome_activity.xml" value="0.22826086956521738" />
       </map>
     </option>
   </component>

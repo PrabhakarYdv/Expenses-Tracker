@@ -127,7 +127,7 @@ dependencies {
     // Gif ImageView
     implementation 'pl.droidsonroids.gif:android-gif-drawable:1.2.23'
 
-    //fire base
+    //Firebase
     implementation 'com.google.firebase:firebase-auth:21.0.1'
 
     //google authentication
