@@ -9,7 +9,7 @@
     tools:context=".SignupActivity">
 
     <TextView
-        android:id="@+id/signUPHeader"
+        android:id="@+id/loginHeader"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
         android:layout_margin="50dp"
@@ -28,11 +28,10 @@
         android:layout_margin="20dp"
         android:orientation="vertical"
         android:padding="20dp"
-        app:layout_constraintTop_toBottomOf="@id/signUPHeader">
-
+        app:layout_constraintTop_toBottomOf="@id/loginHeader">
 
         <EditText
-            android:id="@+id/registerName"
+            android:id="@+id/loginEmail"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -45,46 +44,20 @@
             android:textSize="20dp" />
 
         <EditText
-            android:id="@+id/registerEmail"
+            android:id="@+id/loginPassword"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
             android:background="@drawable/edit_text_bg"
             android:fontFamily="@font/electrolize"
-            android:hint="Enter Email"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="20dp"
-            android:textColorHint="#000000"
-            android:textSize="20dp" />
-
-        <EditText
-            android:id="@+id/registerPassword"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/edit_text_bg"
-            android:fontFamily="@font/electrolize"
-            android:hint="Enter Password"
-            android:paddingHorizontal="10dp"
-            android:paddingVertical="20dp"
-            android:textColorHint="#000000"
-            android:textSize="20dp" />
-
-        <EditText
-            android:id="@+id/registerConfirmPass"
-            android:layout_width="match_parent"
-            android:layout_height="wrap_content"
-            android:layout_margin="5dp"
-            android:background="@drawable/edit_text_bg"
-            android:fontFamily="@font/electrolize"
-            android:hint="Enter Confirm-Password"
+            android:hint="Enter password"
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
             android:textColorHint="#000000"
             android:textSize="20dp" />
 
         <TextView
-            android:id="@+id/btnRegister"
+            android:id="@+id/btnLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="20dp"
@@ -93,7 +66,7 @@
             android:fontFamily="@font/electrolize"
             android:gravity="center"
             android:paddingVertical="20dp"
-            android:text="Register"
+            android:text="Login"
             android:textColor="@color/white"
             android:textSize="20dp"
             android:textStyle="bold" />
@@ -104,7 +77,7 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/electrolize"
             android:gravity="center"
-            android:text="Already have an account ?"
+            android:text="Haven't account ?"
             android:textColor="@color/white"
             android:textSize="20dp" />
 
@@ -114,7 +87,7 @@
             android:layout_margin="5dp"
             android:fontFamily="@font/electrolize"
             android:gravity="center"
-            android:text="Login"
+            android:text="Register"
             android:textColor="#FB0101"
             android:textSize="22dp"
             android:textStyle="bold" />

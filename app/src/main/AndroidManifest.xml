@@ -10,6 +10,9 @@
         android:supportsRtl="true"
         android:theme="@style/Theme.ExpensesTracker">
         <activity
+            android:name=".LoginActivity"
+            android:exported="false" />
+        <activity
             android:name=".OptionActivity"
             android:exported="false" />
         <activity
