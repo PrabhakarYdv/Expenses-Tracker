@@ -41,7 +41,7 @@
             android:hint="Enter Name"
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
-            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:textSize="20dp" />
 
         <EditText
@@ -54,7 +54,7 @@
             android:hint="Enter Email"
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
-            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:textSize="20dp" />
 
         <EditText
@@ -67,7 +67,7 @@
             android:hint="Enter Password"
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
-            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:textSize="20dp" />
 
         <EditText
@@ -80,14 +80,14 @@
             android:hint="Enter Confirm-Password"
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
-            android:textColorHint="#000000"
+            android:textColor="#000000"
             android:textSize="20dp" />
 
         <TextView
             android:id="@+id/btnRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
-            android:layout_margin="20dp"
+            android:layout_margin="25dp"
             android:background="@drawable/btn_bg2"
             android:clickable="true"
             android:fontFamily="@font/electrolize"
@@ -128,11 +128,19 @@
         <TextView
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:fontFamily="@font/electrolize"
             android:layout_margin="5dp"
+            android:fontFamily="@font/electrolize"
             android:text="Sign up with"
             android:textColor="@color/white"
             android:textSize="20dp" />
+
+        <ImageView
+            android:layout_width="30dp"
+            android:layout_height="30dp"
+            android:layout_margin="10dp"
+            android:clickable="true"
+            android:elevation="2dp"
+            android:src="@drawable/google" />
     </LinearLayout>
 
 </androidx.constraintlayout.widget.ConstraintLayout>
