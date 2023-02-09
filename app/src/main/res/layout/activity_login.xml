@@ -7,6 +7,17 @@
     android:background="@drawable/background"
     android:orientation="horizontal"
     tools:context=".SignupActivity">
+    <ImageView
+        android:id="@+id/loginLogo"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
+        android:layout_margin="5dp"
+        android:src="@drawable/logo2"
+        app:layout_constraintBottom_toTopOf="@id/loginHeader"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
 
     <TextView
         android:id="@+id/loginHeader"
@@ -20,7 +31,8 @@
         android:textSize="30dp"
         android:textStyle="bold"
         app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent" />
+        app:layout_constraintTop_toBottomOf="@id/loginLogo"
+        />
 
     <LinearLayout
         android:layout_width="match_parent"
@@ -82,6 +94,7 @@
             android:textSize="20dp" />
 
         <TextView
+            android:id="@+id/redirectRegister"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_margin="5dp"
@@ -91,8 +104,67 @@
             android:textColor="#FB0101"
             android:textSize="22dp"
             android:textStyle="bold" />
-    </LinearLayout>
 
+        <View
+            android:layout_width="match_parent"
+            android:layout_height="2dp"
+            android:layout_margin="5dp"
+            android:background="@color/white" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_margin="5dp"
+            android:fontFamily="@font/electrolize"
+            android:text="Login With"
+            android:textColor="@color/white"
+            android:textSize="20dp" />
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="horizontal"
+            android:weightSum="3">
+
+            <ImageView
+                android:id="@+id/btnloginGoogle"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:src="@drawable/google" />
+
+            <ImageView
+                android:id="@+id/btnloginFacebook"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:src="@drawable/facebook" />
+
+            <ImageView
+                android:id="@+id/loginPhone"
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:elevation="2dp"
+                android:src="@drawable/phone" />
+
+            <ImageView
+                android:layout_width="30dp"
+                android:layout_height="30dp"
+                android:layout_margin="10dp"
+                android:layout_weight="1"
+                android:clickable="true"
+                android:elevation="2dp" />
+        </LinearLayout>
+    </LinearLayout>
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
