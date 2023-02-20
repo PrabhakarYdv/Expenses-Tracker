@@ -20,14 +20,16 @@
             android:src="@drawable/logo" />
 
         <TextView
+            android:id="@+id/optLogin"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"
+            android:layout_marginTop="10dp"
             android:background="@drawable/button_bg"
             android:clickable="true"
             android:elevation="2dp"
-            android:gravity="center"
             android:fontFamily="@font/electrolize"
+            android:gravity="center"
             android:padding="15dp"
             android:text="LOGIN"
             android:textColor="#FFFFFF"
@@ -35,6 +37,7 @@
             android:textStyle="bold" />
 
         <TextView
+            android:id="@+id/optSignUp"
             android:layout_width="match_parent"
             android:layout_height="wrap_content"
             android:layout_marginHorizontal="80dp"
