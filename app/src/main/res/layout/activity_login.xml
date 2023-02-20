@@ -49,7 +49,7 @@
             android:layout_margin="5dp"
             android:background="@drawable/edit_text_bg"
             android:fontFamily="@font/electrolize"
-            android:hint="Enter Name"
+            android:hint="Enter Email Address"
             android:paddingHorizontal="10dp"
             android:paddingVertical="20dp"
             android:textColorHint="#000000"
