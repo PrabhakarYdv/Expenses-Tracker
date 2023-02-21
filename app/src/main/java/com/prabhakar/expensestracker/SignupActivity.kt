@@ -17,7 +17,7 @@ class SignupActivity : AppCompatActivity() {
 
         btnRegister.setOnClickListener {
             if (signUpValidation()) {
-                startActivity(Intent(this, MainActivity::class.java))
+                startActivity(Intent(this, HomeActivity::class.java))
 
             }
         }
