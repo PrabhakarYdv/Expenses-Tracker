@@ -10,8 +10,8 @@
 
     <ImageView
         android:id="@+id/signUpLogo"
-        android:layout_width="50dp"
-        android:layout_height="50dp"
+        android:layout_width="100dp"
+        android:layout_height="100dp"
         android:layout_margin="5dp"
         android:src="@drawable/logo2"
         app:layout_constraintBottom_toTopOf="@id/signUPHeader"
