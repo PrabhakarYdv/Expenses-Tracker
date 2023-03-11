@@ -23,7 +23,7 @@ class SignupActivity : AppCompatActivity() {
         btnRegister.setOnClickListener {
             if (signUpValidation()) {
                 signUpUser()
-                startActivity(Intent(this, HomeActivity::class.java))
+
             }
         }
     }
@@ -39,6 +39,7 @@ class SignupActivity : AppCompatActivity() {
             Toast.makeText(this, "Complete", Toast.LENGTH_SHORT).show()
 
         }.addOnSuccessListener {
+            startActivity(Intent(this, HomeActivity::class.java))
             Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
         }.addOnFailureListener {
             Toast.makeText(this, "Failure", Toast.LENGTH_SHORT).show()
