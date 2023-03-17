@@ -2,10 +2,13 @@ package com.prabhakar.expensestracker
 
 import android.content.Intent
 import android.os.Bundle
+import android.widget.Toast
 import androidx.appcompat.app.AppCompatActivity
+import com.google.firebase.auth.FirebaseAuth
 import kotlinx.android.synthetic.main.activity_login.*
 
 class LoginActivity : AppCompatActivity() {
+    private val firebaseAuth = FirebaseAuth.getInstance()
     private val emailPattern = Regex("[a-zA-Z0-9._-]+@[a-z]+\\.+[a-z]+")
     override fun onCreate(savedInstanceState: Bundle?) {
         super.onCreate(savedInstanceState)
@@ -17,9 +20,21 @@ class LoginActivity : AppCompatActivity() {
 
         btnLogin.setOnClickListener {
             if (loginValidation()) {
-                startActivity(Intent(this, HomeActivity::class.java))
+                loginUser()
+
             }
         }
+    }
+
+    private fun loginUser() {
+        firebaseAuth.signInWithEmailAndPassword(loginEmail.text.toString(),
+            loginPassword.text.toString())
+            .addOnSuccessListener {
+                startActivity(Intent(this, HomeActivity::class.java))
+            }.addOnFailureListener {
+                Toast.makeText(this, "some error occured", Toast.LENGTH_SHORT).show()
+            }
+
     }
 
     private fun loginValidation(): Boolean {
