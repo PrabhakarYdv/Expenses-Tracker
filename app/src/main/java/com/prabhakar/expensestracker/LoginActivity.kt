@@ -30,11 +30,16 @@ class LoginActivity : AppCompatActivity() {
         firebaseAuth.signInWithEmailAndPassword(loginEmail.text.toString(),
             loginPassword.text.toString())
             .addOnSuccessListener {
+                Toast.makeText(this, "Success", Toast.LENGTH_SHORT).show()
                 startActivity(Intent(this, HomeActivity::class.java))
-            }.addOnFailureListener {
-                Toast.makeText(this, "some error occured", Toast.LENGTH_SHORT).show()
             }
+            .addOnCompleteListener {
+                Toast.makeText(this, "Complete", Toast.LENGTH_SHORT).show()
+            }
+            .addOnFailureListener {
+                Toast.makeText(this, "Some error occur", Toast.LENGTH_SHORT).show()
 
+            }
     }
 
     private fun loginValidation(): Boolean {
